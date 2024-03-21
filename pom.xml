@@ -43,6 +43,13 @@
 				<env>production</env>
 			</properties>
 		</profile>
+		<profile>
+			<id>pre-prod</id>
+			<properties>
+				<env>pre-prod</env>
+			</properties>
+		</profile>
+
 	</profiles>
 
 	<build>
@@ -73,7 +80,7 @@
 					<version>2.1.1</version>
 					<configuration>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
-						<warName>TEST</warName>
+						<warName>ProfileTEST</warName>
 					</configuration>
 				</plugin>
 			</plugins>
