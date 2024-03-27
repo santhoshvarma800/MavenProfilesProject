@@ -30,6 +30,19 @@
 		</dependency>
 
 	</dependencies>
+	<distributionManagement> 
+            <repository> 
+	        <id>Nexus</id>
+		<name>DeveloperReleaseRepo</name>
+		 <url>http://3.109.184.129:8081/repository/Releaserepository/</url>
+	    </repository>
+	    <snapshotRepository>
+	         <id>Nexus</id>
+		 <name>DeveloperSnapshotRepo</name>
+		 <url>http://3.109.184.129:8081/repository/SnapshotRepository/</url> 
+             </snapshotRepository>
+	 </distributionManagement>
+
 
 	<profiles>
 		<profile>
@@ -84,19 +97,7 @@
 				</excludes>
 			</resource>
 		</resources>
-		<distributionManagement> 
-         <repository> 
-		          <id>Nexus</id>
-				  <name>DeveloperReleaseRepo</name>
-				  <url>http://3.109.184.129:8081/repository/Releaserepository/</url>
-		  </repository>
-		  <snapshotRepository>
-		            <id>Nexus</id>
-				  <name>DeveloperSnapshotRepo</name>
-				  <url>http://3.109.184.129:8081/repository/SnapshotRepository/</url> 
-            </snapshotRepository>
-		</distributionManagement>
-		
+				
 		<pluginManagement>
 			<plugins>
 				<plugin>
